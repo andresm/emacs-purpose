@@ -21,7 +21,8 @@ env:
 before_install:
   - curl -fsSkL https://gist.github.com/rejeep/ebcd57c3af83b049833b/raw > travis.sh && source ./travis.sh
   - evm install $EVM_EMACS --use --skip
-  - cp -f /home/andresm/emacs-purpose/cask /home/travis/.cask/cask
+  - ls -la
+  - cp -f /home/travis/andresm/emacs-purpose/cask /home/travis/.cask/cask
   - cask
 
 # notifications:
