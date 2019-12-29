@@ -24,7 +24,7 @@ before_install:
   - pwd
   - ls -la
   - which cask
-  - cp -f cask /home/travis/.cask/cask
+  - cp -f cask /home/travis/.cask/bin/cask
   - cask
 
 # notifications:
