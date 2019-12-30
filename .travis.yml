@@ -25,6 +25,8 @@ before_install:
   - ls -la
   - which cask
   - cp -f cask /home/travis/.cask/bin/cask
+  - emacs --version
+  - ls /tmp/
   - cask
 
 # notifications:
