@@ -6,7 +6,7 @@ script:
 
 env:
   matrix:
-    - EVM_EMACS=emacs-26.1-travis
+    - EVM_EMACS=emacs-26.1-travis-linux-xenial
     - EVM_EMACS=emacs-25.3-travis
     # don't need 25.2 because it's the same 25.3
     - EVM_EMACS=emacs-25.1-travis
@@ -21,7 +21,7 @@ env:
 before_install:
   - curl -fsSkL https://gist.github.com/rejeep/ebcd57c3af83b049833b/raw > travis.sh && source ./travis.sh
   - evm install $EVM_EMACS --use --skip
-  - apt-cache search libgnutls
+#  - apt-cache search libgnutls
   - pwd
   - ls -la
   - which cask
